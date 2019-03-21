@@ -12,8 +12,10 @@ def calc_multiple(a, b):
 
 def calc_divide(a, b):
     print('{} / {} ='.format(str(a), str(b)), end=' ')
-    return a / b
-    if 
+    try:
+        return a / b
+    except ZeroDivisionError:
+        print("Nie dzielimy przez 0") 
 
 def check_operation_name(operation):
     

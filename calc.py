@@ -1,6 +1,7 @@
 def calc_add(a, b):
-    print('{} + {} ='.format(str(a), str(b)), end=' ')
-    return a + b
+    print(args)
+    list_args = args[0].split(' ')
+    return sum([int(i) for i in list_args])
 
 def calc_subtract(a, b):
     print('{} - {} ='.format(str(a), str(b)), end=' ')
@@ -34,7 +35,7 @@ method_dict = {
 
 if __name__ == "__main__":
     print('Witam w moim kalkulatorze :)')
-    while True
+    while True:
         operation = input('Podaj dzialanie: dodawanie, odejmowanie, mnozenie, dzielenie : ')
         if operation == 'exit':
             break
